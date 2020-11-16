@@ -3,5 +3,5 @@
 Simple password generator with ability to control the character sets and number of characters. Built with HTML, CSS, JavaScript.
 
 Built with: 
-![GitHub Logo](https://e7.pngegg.com/pngimages/658/623/png-clipart-cascading-style-sheets-html-web-development-javascript-web-browser-vs-miscellaneous-blue.png)
+![GitHub Logo](https://www.freepnglogos.com/uploads/html5-logo-png/html5-logo-devextreme-multi-purpose-controls-html-javascript-3.png | width=300)
 Format: ![Stack Used: HTML, CSS, JavaScript](url)
