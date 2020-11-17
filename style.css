@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Chau+Philomene+One&display=swap');
+
+body {
+    height: 100vh;
+    background-color: black;
+    background-image: url("https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3150&q=80/900x900");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Chau Philomene One', sans-serif;
+}
+
+h1 {
+    color: white;
+    font-weight: 200;
+    font-size: 4vh;
+}
+
+.main-container {
+    background-color: #071e14d3;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.result-line {
+    display: flex;
+    padding: 20px 0;
+}
+
+.span {
+    width: 100%;
+    height: 45px;
+    background-color: #449e72;
+}
+
+.settings {
+    display: flex;
+    flex-direction: column;
+}
+
+.input {
+    display: flex;
+    line-height: 2em;
+    font-size: 2.5vh;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.input input[type=checkbox]{
+    transform: scale(1.5);
+}
+
+
+.input input[type=number]{
+    font-size: 1.5vh;
+    font-family: 'Chau Philomene One', sans-serif;
+}
+
+.input label[for=length]::after {
+    content: "(min. 8 - max. 24 characters)";
+    font-size: 1vh;
+    padding: 0 10px;
+}
+
+
+form {
+    width: 90%;
+    color: white;
+}
+
+#generate {
+    width: 100%;
+    height: 2em;
+    font-family: 'Chau Philomene One', sans-serif;
+    color: white;
+    font-size: 3vh;
+    background-color: #449e72;
+    border: none;
+    margin: 20px 0;
+}
+
+#generate:hover {
+    background-color: green;
+}
+
+#generate:active {
+    background-color: green;
+    transform: translateY(3px);
+}
+
+@media only screen and (min-width: 700px) {
+    .main-container {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .main-container {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .main-container {
+        width: 100%;
+        padding: 40px 10px;
+    }
+
+    form {
+        width: 95%;
+    }
+}

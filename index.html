@@ -17,29 +17,38 @@
         <form action="">
 
             <div class="result-line">
-                <input type="text" name="" id="result">
-                <button><i class="far fa-clipboard"></i></button></div>
+                <span class="span"></span>
+                <button id="clipboard"><i class="far fa-clipboard"></i></button></div>
     
 <div class="settings">
-                <label for="length">Password length</label>
-                <input type="number" name="length" id="length" min="8" max="24">
+                <div class="input">
+                    <label for="length">Password length</label>
+                    <input type="number" name="length" id="length" min="8" max="24" value="16">
+                </div>
         
-                <label for="symbols">Include lower case characters</label>
-                <input type="checkbox" name="" id="symbols">
+                <div class="input">
+                    <label for="lowerCase">Include lower case characters</label>
+                    <input type="checkbox" name="" id="lowerCase" checked>
+                </div>
         
-                <label for="upperCase">Include upper case characters</label>
-                <input type="checkbox" name="" id="upperCase">
+                <div class="input">
+                    <label for="upperCase">Include upper case characters</label>
+                    <input type="checkbox" name="" id="upperCase">
+                </div>
         
-                <label for="numbers">Include numbers</label>
-                <input type="checkbox" name="" id="numbers">
+                <div class="input">
+                    <label for="numbers">Include numbers</label>
+                    <input type="checkbox" name="" id="numbers">
+                </div>
         
-                <label for="symbols">Include symbols</label>
-                <input type="checkbox" name="" id="symbols">
-</div>
-    
-        <button id="generate">Generate</button>
+                <div class="input">
+                    <label for="symbols">Include symbols</label>
+                    <input type="checkbox" name="" id="symbols">
+                </div>
+
+        <button id="generate">Generate password</button>
         </form>
-</div>
+
     
 </body>
 </html>
