@@ -29,6 +29,22 @@ h1 {
 .result-line {
     display: flex;
     padding: 20px 0;
+	font-size: 2rem;
+    letter-spacing: 2px;
+    font-weight: 100;
+
+}
+
+.result-line #result {
+    padding: 10px 15px;
+    word-wrap: break-word;
+    max-width: calc(100% - 60px);
+    font-weight: 100;
+}
+
+#clipboard {
+    width: 60px;
+    font-size: 1.5rem;
 }
 
 .span {

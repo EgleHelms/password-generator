@@ -7,48 +7,52 @@
     <link rel="icon" href="https://icons-for-free.com/download-icon-key-131994967913129515_512.png" type="image/x-icon"/>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <script src="script.js"></script>
 </head>
+
 <body>
 
 <div class="main-container">
-        <h1>Password Generator</h1>
-    
-        <form action="">
+	<h1>Password Generator</h1>
+    <form>
+    	<div class="result-line">
+		<span class="span" id="result"></span>
+        <button id="clipboard"><i class="far fa-clipboard"></i></button>
+        </div>
 
-            <div class="result-line">
-                <span class="span"></span>
-                <button id="clipboard"><i class="far fa-clipboard"></i></button></div>
+	
+    <div class="settings">
+    			<div class="input">
+    			    <label>Password length</label>
+        			<input type="number" id="length" min='4' max='20' value='16' />
+    			</div>
     
-<div class="settings">
                 <div class="input">
-                    <label for="length">Password length</label>
-                    <input type="number" name="length" id="length" min="8" max="24" value="16">
+    			<label for="lowercase">Include uppercase letters</label> 
+                <input type="checkbox" id="uppercase" checked />
                 </div>
-        
+                
                 <div class="input">
-                    <label for="lowerCase">Include lower case characters</label>
-                    <input type="checkbox" name="" id="lowerCase" checked>
+    			<label for="uppercase">Include lowercase letters</label> 
+                <input type="checkbox" id="lowercase" checked />
                 </div>
-        
+    
                 <div class="input">
-                    <label for="upperCase">Include upper case characters</label>
-                    <input type="checkbox" name="" id="upperCase">
-                </div>
-        
-                <div class="input">
-                    <label for="numbers">Include numbers</label>
-                    <input type="checkbox" name="" id="numbers">
-                </div>
-        
-                <div class="input">
-                    <label for="symbols">Include symbols</label>
-                    <input type="checkbox" name="" id="symbols">
+    			<label for="numbers">Include numbers</label> 
+    			<input type="checkbox" id="numbers" checked />
                 </div>
 
-        <button id="generate">Generate password</button>
-        </form>
+                <div class="input">
+    			<label for="symbols">Include symbols</label> 
+                <input type="checkbox" id="symbols" checked />
+                </div>                
+                <button type='button' id="generate">Generate password</button>
 
-    
+        </div>
+    </form>
+	
+	
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
